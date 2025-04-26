@@ -23,17 +23,41 @@ body, html {
   gap: 10px;
 }
 
-.btn-login, .btn-cadastrar {
-  background-color: #ea7d00;
-  color: white;
-  border: none;
+/* Botões padrões */
+.btn-login, .btn-cadastrar, .btn-primary, .btn-submit {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
   padding: 10px 20px;
+  border: none;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  color: white;
+  background-color: #007bff; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
+
+.btn-login {
+  background-color: #007bff; 
+}
+
 .btn-cadastrar {
-  background-color: #007bff;
+  background-color: #007bff; 
+}
+
+.btn-submit {
+  background-color: #ea7d00; 
+}
+
+.btn-login:hover, .btn-cadastrar:hover, .btn-primary:hover, .btn-submit:hover {
+  background-color: #ff9900; 
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(255, 153, 0, 0.5);
+}
+
+.btn-login:active, .btn-cadastrar:active, .btn-primary:active, .btn-submit:active {
+  transform: scale(0.95);
 }
 
 .hero {
